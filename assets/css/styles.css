@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffebcd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo_container img {
+    width: 50px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: #ffe4b5;
+}
+
+
+.hero {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.hero-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/imgs/fondohero.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 1;
+    color: #ffe4b5;
+}
+
+/* Recetas Section */
+.recetas {
+    padding: 40px 20px;
+}
+
+.recetas_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.receta {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.receta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.receta a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff6600;
+    transition: color 0.3s;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.receta a:hover {
+    color: #cc5200;
+}
+
+.receta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffebcd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
