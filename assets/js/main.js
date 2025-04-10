@@ -13,6 +13,7 @@ const main = async () => {
                 <h3>${recipe.name}</h3>
                 <a href="/recipe.html?id=${recipe.id}">Ver receta</a>
             </div>`;
+
             
     });
 
